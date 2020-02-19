@@ -16,6 +16,7 @@ namespace Widget_Assinment {
             }
             var total = 0.0;
             foreach(var widget in widgets) {
+                Console.WriteLine($"Widget is model {widget.GetModelName()} made in {widget.GetStateName()}");
                 total += widget.GetPrice();
             }
             Console.WriteLine($"Total is {total}");
